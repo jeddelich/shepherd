@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Connect", href: "#connect" },
+  { label: "Premium Plans", href: "#pricing" },
+  { label: "Connect With Us", href: "#connect" },
 ];
 
 export default function Navbar() {
@@ -34,10 +34,10 @@ export default function Navbar() {
           </div>
 
           <a
-            href="#signup"
+            href="/register"
             className="inline-flex items-center justify-center rounded-full bg-(--color-accent) px-4 py-2.5 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5"
           >
-            Sign up
+            Create Free Account
           </a>
         </nav>
       </div>
