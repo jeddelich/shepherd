@@ -1,6 +1,6 @@
 type Person = {
     name: string;
-    lastContact: Date;
+    lastContact: Date | null;
     careStatus: string;
     currentSituation: string;
 }

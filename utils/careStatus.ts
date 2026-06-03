@@ -1,14 +1,9 @@
-const careStatus = (
-  lastContact: Date,
-  followUpDate: Date,
-) => {
-  const msPerDay = 1000 * 60 * 60 * 24;
-  const daysBetweenContacts =
-    (followUpDate.getTime() - lastContact.getTime()) / msPerDay;
-  const daysUntilFollowUp =
-    (followUpDate.getTime() - Date.now()) / msPerDay;
+const careStatus = (lastContact: Date | null, followUpDate: Date) => {
+  if (!lastContact) return "No Contact";
 
-  if (!lastContact) return null;
+  const msPerDay = 1000 * 60 * 60 * 24;
+  const daysBetweenContacts = (followUpDate.getTime() - lastContact.getTime()) / msPerDay;
+  const daysUntilFollowUp = (followUpDate.getTime() - Date.now()) / msPerDay;
 
   if (daysBetweenContacts <= 2) {
     return "Crisis";
