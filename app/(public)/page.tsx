@@ -5,7 +5,7 @@ export default function Home() {
         <div className="absolute inset-x-0 top-0 h-40 bg-[linear-gradient(135deg,rgba(79,124,130,0.22),rgba(201,123,99,0.18),transparent)]" />
 
         <div className="relative grid gap-10 px-6 py-8 sm:px-10 sm:py-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-14 lg:py-16">
-          <section className="flex flex-col justify-between gap-8">
+          <section id="about" className="flex flex-col justify-between gap-8">
             <div className="space-y-6">
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-[rgba(79,124,130,0.18)] bg-[rgba(79,124,130,0.08)] px-4 py-2 text-sm font-medium tracking-[0.18em] text-(--color-primary) uppercase">
                 Care coordination, made calm
@@ -23,7 +23,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div id="signup" className="flex flex-col gap-4 sm:flex-row">
               <a
                 href="#palette"
                 className="inline-flex items-center justify-center rounded-full bg-(--color-primary) px-6 py-3 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5"
@@ -38,7 +38,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div id="pricing" className="grid gap-4 sm:grid-cols-3">
               <div className="rounded-3xl border border-(--color-border) bg-white/70 p-4">
                 <p className="text-sm text-[rgba(55,65,81,0.68)]">Primary use</p>
                 <p className="mt-2 text-xl font-semibold text-(--color-primary)">Navigation + trust</p>
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="preview" className="grid gap-5">
+          <section id="connect" className="grid gap-5">
             <div className="rounded-[1.75rem] border border-(--color-border) bg-(--color-secondary) p-5">
               <div className="flex items-start justify-between gap-4 rounded-3xl bg-white px-5 py-4 shadow-[0_14px_32px_rgba(55,65,81,0.08)]">
                 <div>
